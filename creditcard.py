@@ -32,7 +32,7 @@ print(df.isnull().sum())
 
 
 duplicate_count = df.duplicated().sum()
-print("\nDuplicate Rows:", duplicate_count)
+print("\nDuplicate Rows are:", duplicate_count)
 
 
 df = df.drop_duplicates()
@@ -285,4 +285,3 @@ print("Suspicious Transactions Detected:", total_anomalies)
 print("Anomaly Percentage:", round(anomaly_percentage, 2), "%")
 print("Model Used: Isolation Forest")
 print("Training Type: Unsupervised Learning")
-print("===========================================")
